@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css blog</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h2>Learn CSS</h2>
+    <p>
+      CSS stands for Cascading Style Sheet. Where HTML is what defines the
+      structure and content of a web page, a Cascading Style Sheet is a web
+      document that allows you to change the appearance of the HTML. CSS allows
+      you to change the size, style, font, and color of text; margins and
+      padding; background colors and border styles. It can also be used to
+      position elements on a page (but we’ll leave that for another day).
+    </p>
+    <p>
+      The best thing about CSS is that is allows you to make global style
+      changes that affect every instance of a certain element throughout your
+      blog or website so that you don’t have to make these changes at the
+      individual page level. This saves you a ton of time when it comes to
+      redesigning your blog. Here’s an example of what I mean: as we learned
+      last week, the page title on a blog page is defined by an HTML element
+      called an H1 (heading 1). By default, the browser displays an H1 as extra
+      large, bold, black text, much like we saw in the PAWS example. If we want
+      to change the color, font and size of all the H1’s on our blog to keep
+      consistency throughout, all you need to do is define what all H1’s will
+      look like in your CSS. Sometimes different browsers may display slightly
+      different default styles. Using a style sheet to define what a specific
+      element should look like can keep the look of your blog consistent from
+      one browser to another as well as one device to another.
+    </p>
+    <h3>HOW DOES CSS WORK?</h3>
+    <p>
+      A very important piece of CSS is the “Cascading” part. The browser reads
+      style definitions from top to bottom in a style sheet. This means that a
+      style you define lower in the style sheet will override any previous
+      styles defined earlier in the style sheet.
+    </p>
+    <h3>HOW CSS IS APPLIED</h3>
+    <p>CSS is applied to HTML elements in a web page by declaring specific styles for each element. A style declaration looks like this:
+
+        selector {
+             property: value;
+        }
+        Let’s look at each of these pieces separately:
+        
+        Selector
+        The selector is the piece of content that we want to target and style. It is either an HTML element or a Class Name.
+        
+        When defining an HTML element, we use the tag name without the opening and closing bracket. For example, the <p> (or paragraph tag) would simply be:
+        
+        p
+        A Class Name always begins with a dot. For example,
+        
+        .big-font
+        We’ll get more into classes in a bit.
+        
+        Property
+        Properties and their respective values always live within curly braces:
+        
+        p {
+        }
+        Properties are predefined terms within CSS that all web browsers understand. They are things like:
+        
+        font-family, font-size, color, etc.
+        
+        p {
+             font-family: 
+             font-size: 
+             color: 
+        }
+        A property is always followed by a colon (:)
+        
+        Value
+        The value is the particular style or variable you choose to assign to a property. For example:
+        
+        p {
+             font-family: Arial;
+             font-size: 16px;
+             color: gray;
+        }
+        A value is always followed by a semi-colon (;)
+        
+        So the example above tells the browser that we want all of our page titles (or any element surrounded by an <p> tag) to be displayed in Arial font at 16 pixels in size and in the color gray.
+        
+        Pretty easy, right? Let’s do another one.
+        
+        a {
+             color: pink;
+             font-weight: bold;
+             text-decoration: none;
+        }
+        This example tells the browser to make all links (anchor tags that look like this: <a>) within our blog the color pink, bold, and not underlined. (Browsers by default display links in blue with an underline).
+        
+        </p>
+        <button class="btn-sn" ><a href="/blog.html">Back</a></button>
+  </body>
+</html>
